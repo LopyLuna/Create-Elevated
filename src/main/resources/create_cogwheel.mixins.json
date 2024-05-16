@@ -1,0 +1,14 @@
+
+{
+  "required": true,
+  "minVersion": 0.8,
+  "priority": 1600,
+  "package": "uwu.lopyluna.create_cogwheel.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "create_cogwheel.refmap.json",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
