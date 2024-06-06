@@ -1,4 +1,4 @@
-package uwu.lopyluna.create_cogwheel;
+package uwu.lopyluna.create_elevated;
 
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.*;
@@ -18,18 +18,18 @@ import java.util.Random;
 
 
 @SuppressWarnings({"removal","all"})
-@Mod(CogwheelCreate.MOD_ID)
-public class CogwheelCreate
+@Mod(ElevatedCreate.MOD_ID)
+public class ElevatedCreate
 {
-    public static final String NAME = "Create: Refined Cogwheels";
-    public static final String MOD_ID = "create_cogwheel";
+    public static final String NAME = "Create: Elevated";
+    public static final String MOD_ID = "create_elevated";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final Random RANDOM = Create.RANDOM;
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 
-    public CogwheelCreate()
+    public ElevatedCreate()
     {
         ModLoadingContext modLoadingContext = ModLoadingContext.get();
 
@@ -40,9 +40,9 @@ public class CogwheelCreate
 
 
 
-        modEventBus.addListener(CogwheelCreate::init);
+        modEventBus.addListener(ElevatedCreate::init);
 
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> CogwheelClient.onCtorClient(modEventBus, forgeEventBus));
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> ElevatedClient.onCtorClient(modEventBus, forgeEventBus));
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

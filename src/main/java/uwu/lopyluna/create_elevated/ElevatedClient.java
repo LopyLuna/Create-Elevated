@@ -1,14 +1,14 @@
-package uwu.lopyluna.create_cogwheel;
+package uwu.lopyluna.create_elevated;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-public class CogwheelClient {
+public class ElevatedClient {
 
 
 
     public static void onCtorClient(IEventBus modEventBus, IEventBus forgeEventBus) {
-        modEventBus.addListener(CogwheelClient::clientInit);;
+        modEventBus.addListener(ElevatedClient::clientInit);;
     }
 
 

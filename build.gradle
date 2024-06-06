@@ -166,7 +166,6 @@ task jarJarRelease {
 
 java {
     withSourcesJar()
-    withJavadocJar()
 }
 
 void addLicense(jarTask) {
